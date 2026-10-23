@@ -1,0 +1,126 @@
+import { MentorMode, MentorModeInfo } from '../types';
+
+export const MENTOR_MODES: Record<MentorMode, MentorModeInfo> = {
+  life: {
+    id: 'life',
+    name: 'Life Mentor',
+    badge: 'Grounded Wisdom',
+    tagline: 'Life transitions, family dynamics & finding your authentic center',
+    description:
+      'Warm, calm elder guidance for navigating adulting, friendship boundaries, parental pressure, and emotional balance.',
+    iconName: 'Compass',
+    bgGradient: 'from-amber-50 to-orange-50/40',
+    borderColor: 'border-amber-200',
+    textColor: 'text-amber-900',
+    pillBg: 'bg-amber-100 text-amber-900',
+    safeVentFocus: 'Venting about family expectations, feeling misunderstood, friendship fallouts, or life transitions.',
+    starters: [
+      'I feel overwhelmed by my family’s high expectations and fear disappointing them.',
+      'I’m having a hard time balancing friendships with my own personal boundaries.',
+      'Sometimes I feel completely lost about who I am becoming. Can we talk?',
+      'I had an exhausting day where everything felt too heavy to carry alone.',
+    ],
+  },
+  study: {
+    id: 'study',
+    name: 'Study Mentor',
+    badge: 'Academic Strategy',
+    tagline: 'Exam calmness, smart scheduling & overcoming procrastination',
+    description:
+      'Structured, patient study coach who breaks daunting coursework into calm, achievable 15-minute micro-tasks.',
+    iconName: 'GraduationCap',
+    bgGradient: 'from-sky-50 to-blue-50/40',
+    borderColor: 'border-sky-200',
+    textColor: 'text-sky-900',
+    pillBg: 'bg-sky-100 text-sky-900',
+    safeVentFocus: 'Venting about exam dread, assignment paralysis, syllabus backlog, or burnout.',
+    starters: [
+      'I have an exam in 3 days and I keep procrastinating because of sheer panic.',
+      'My assignment backlog feels insurmountable. Help me break it into 15-minute blocks.',
+      'I study for hours but feel like nothing sticks in my head. What should I change?',
+      'How do I stay focused when social media keeps pulling my attention away?',
+    ],
+  },
+  english: {
+    id: 'english',
+    name: 'English Coach',
+    badge: 'Fluency & Poise',
+    tagline: 'Speaking courage, natural phrasing & accent confidence',
+    description:
+      'Gentle, non-judgmental English practice partner. Gives natural phrasing improvements without highlighting embarrassment.',
+    iconName: 'Languages',
+    bgGradient: 'from-teal-50 to-emerald-50/40',
+    borderColor: 'border-teal-200',
+    textColor: 'text-teal-900',
+    pillBg: 'bg-teal-100 text-teal-900',
+    safeVentFocus: 'Venting about feeling tongue-tied in seminars, fear of speaking English in public, or feeling judged.',
+    starters: [
+      'I get paralyzed when someone asks me to speak English in front of class.',
+      'Can you help me polish a 60-second self-introduction for campus placements?',
+      'Let’s practice casual conversation about my favorite book or movie.',
+      'I want to express an opinion respectfully in a group debate in English.',
+    ],
+  },
+  career: {
+    id: 'career',
+    name: 'Career Guide',
+    badge: 'Placement & Future',
+    tagline: 'Internships, interview mindset & corporate navigation',
+    description:
+      'Pragmatic placement coach and industry advisor. Helps you frame your strengths, practice STAR answers, and conquer imposter syndrome.',
+    iconName: 'Briefcase',
+    bgGradient: 'from-purple-50 to-indigo-50/40',
+    borderColor: 'border-purple-200',
+    textColor: 'text-purple-900',
+    pillBg: 'bg-purple-100 text-purple-900',
+    safeVentFocus: 'Venting about placement rejections, imposter syndrome among peers, or resume insecurity.',
+    starters: [
+      'I got rejected from an internship interview and feel completely unqualified.',
+      'Can you mock-interview me with: "Tell me about a time you faced a difficult conflict"?',
+      'I feel behind my peers who already have tech offers. How do I cope?',
+      'Help me turn a modest class project into a strong resume bullet using the STAR framework.',
+    ],
+  },
+  motivation: {
+    id: 'motivation',
+    name: 'Motivation Coach',
+    badge: 'High Energy Spark',
+    tagline: 'Overcoming inertia, celebrating non-zero days & momentum',
+    description:
+      'Inspirational champion who fires up your self-belief, shakes off sluggishness, and helps you take immediate 2-minute action.',
+    iconName: 'Zap',
+    bgGradient: 'from-rose-50 to-orange-50/40',
+    borderColor: 'border-rose-200',
+    textColor: 'text-rose-900',
+    pillBg: 'bg-rose-100 text-rose-900',
+    safeVentFocus: 'Venting about feeling stuck in bed, lethargy, broken streaks, or low self-belief.',
+    starters: [
+      'I’ve spent the whole morning scrolling and feel terrible about myself. Give me a reset.',
+      'I broke my study streak and feel like throwing in the towel. Help me restart.',
+      'Give me a 2-minute non-zero micro-action to build momentum right now.',
+      'Remind me why small consistent efforts matter more than giant occasional bursts.',
+    ],
+  },
+  reflect: {
+    id: 'reflect',
+    name: 'Reflection Companion',
+    badge: 'Safe Vent Sanctuary',
+    tagline: 'Raw venting container, emotional untangling & mindful reframing',
+    description:
+      'A quiet, compassionate safe haven. Choose between pure non-judgmental listening or guided psychological reframing.',
+    iconName: 'HeartHandshake',
+    bgGradient: 'from-emerald-50 to-teal-50/40',
+    borderColor: 'border-emerald-200',
+    textColor: 'text-emerald-900',
+    pillBg: 'bg-emerald-100 text-emerald-900',
+    safeVentFocus: 'Safe unfiltered venting: express anything you are holding inside with zero judgment.',
+    starters: [
+      'I just need to vent without anyone trying to fix it immediately. Can you just listen?',
+      'I had a really painful interaction today and can’t get the replaying thoughts out of my head.',
+      'Help me examine an automatic negative thought using the 4-Step Reality Check.',
+      'I feel emotionally drained today and need a safe, peaceful moment to decompress.',
+    ],
+  },
+};
+
+export const MENTOR_MODE_LIST: MentorModeInfo[] = Object.values(MENTOR_MODES);

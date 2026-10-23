@@ -1,5 +1,20 @@
-# GrowWise_App
-Building an AI companion that helps people grow, not depend
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
+
+# Run and deploy your AI Studio app
+
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/f8ddda8b-8300-44a4-91cb-5a4f68ac5cd6
+
+## Run Locally
+
+**Prerequisites:**  Node.js
 
 
-To create a private, AI-powered companion that provides a safe, judgment-free space where users can express their thoughts, emotions, and concerns openly. The app aims to support emotional well-being, build confidence, encourage personal growth, and help users develop real-world relationships rather than replace them.
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

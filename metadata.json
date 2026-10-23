@@ -1,0 +1,7 @@
+{
+  "name": "GrowWise",
+  "description": "A personal growth, confidence building, English communication practice, and reflection companion for students and young adults.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
